@@ -1,15 +1,17 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
-const WorkoutContext = createContext();
+export const WorkoutContext = createContext();
 
 export const WorkoutProvider = ({ children }) => {
   const [workouts, setWorkouts] = useState([]);
 
+  const addWorkout = (workout) => {
+    setWorkouts([...workouts, workout]);
+  };
+
   return (
-    <WorkoutContext.Provider value={{ workouts, setWorkouts }}>
+    <WorkoutContext.Provider value={{ workouts, setWorkouts, addWorkout }}>
       {children}
     </WorkoutContext.Provider>
   );
 };
-
-export const useWorkoutContext = () => useContext(WorkoutContext);
