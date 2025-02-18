@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar'; // Import Navbar
-import Nav from 'react-bootstrap/Nav'; // Import Nav
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { UserProvider } from './context/UserContext';
