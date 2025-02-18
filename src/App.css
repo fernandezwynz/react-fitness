@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button#addWorkout {
+  margin-bottom: 20px;
+  background-color: #fc4c02;
+  border-color: #fc4c02;
+  color: white;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #fc4c02;
+  border-color: #fc4c02;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fc4c02;
+}
